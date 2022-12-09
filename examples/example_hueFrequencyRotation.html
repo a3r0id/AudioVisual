@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AudioVisual.js | HueFrequencyRotation Example</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--AudioVisual-->
+    <script type="text/javascript" src="audioVisual.js"></script>
+
+    <!--W3.css-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  </head>
+  <body>
+    <div class="bg-image-wrapper">
+      <img src="img/la.jpg" class="bg-image blur">
+    </div>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="w3-modal" id="main-modal">
+      <div class="w3-modal-content w3-center">
+        <audio loop preload="auto" id="music" controls>
+          <source src="#" type="audio/mpeg">
+        </audio>
+      </div>
+    </div>
+    <script>
+
+      // Pick a random song
+      const songs = ["azaleh_rainynights", "dvrst_closeeyes", "hekler_astral", "neon_blade"];
+      const song = songs[Math.floor(Math.random() * songs.length)];
+      document.getElementById("music").src = "audio/" + song + ".mp3";
+
+      // AudioVisual example
+      var audioVisual = new AudioVisual("#music", 10);
+      let effect = audioVisual.addEffect("hueFrequencyRotation", "html");
+
+      // Show player on load  
+      window.onload = function() {
+        document.getElementById("main-modal").style.display = "block";
+      };
+      
+    </script>
+
+  </body>
+</html>

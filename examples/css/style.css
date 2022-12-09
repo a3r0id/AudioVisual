@@ -1,0 +1,24 @@
+* {
+    user-select: none !important;
+    background-color: transparent !important;
+    overflow-y: hidden !important;
+    overflow-x: hidden !important;
+};
+
+.bg-image-wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.bg-image{
+    width: 100vw;
+    height: 100vh;
+}
+
+.blur{
+    filter: blur(4px);
+}
