@@ -73,8 +73,22 @@ class AudioVisual
                     element.setAttribute("data-avid", id);
                 }
             },
-            "hueFrequencyRotation": (element, id) => {
+            "frequencyHueRotation": (element, id) => {
                 element.style.filter = `hue-rotate(${this.round2((this.data.avgFreq / 255) * 180)}deg)`;
+                if (this.setAttributes) {
+                    element.setAttribute("data-avgfreq", this.data.avgFreq);
+                    element.setAttribute("data-avid", id);
+                }
+            },
+            "amplitudeRotation": (element, id) => {
+                element.style.transform = `rotate(${this.round2((this.data.amplitude / 255) * 360)}deg)`;
+                if (this.setAttributes) {
+                    element.setAttribute("data-amplitude", this.data.amplitude);
+                    element.setAttribute("data-avid", id);
+                }
+            },
+            "frequencyScale": (element, id, coef=10) => {
+                element.style.transform = `scale(${this.round2((this.data.avgFreq / 255) * coef)})`;
                 if (this.setAttributes) {
                     element.setAttribute("data-avgfreq", this.data.avgFreq);
                     element.setAttribute("data-avid", id);
