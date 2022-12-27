@@ -1,9 +1,15 @@
 # AudioVisual
  A simple library for manipulating CSS filters/effects with document audio amplitude/frequency/color.
 
+## Live Examples
+
+### [Amplitude Blur](https://a3r0id.github.io/AudioVisual/example_amplitudeBlur.html)
+
+### [Hue-Frequency Rotation](https://a3r0id.github.io/AudioVisual/example_hueFrequencyRotation.html)
+
 -----
 
-## Basic Example
+## Basic Implementation
 
 ### Include the script
 ```html
