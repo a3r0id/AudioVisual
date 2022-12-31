@@ -1,5 +1,5 @@
 /*
- * Author: Chad Groom - github.com/a3r0id
+ * Author: github.com/a3r0id
  * 
  * License: MIT
  * 
