@@ -5,7 +5,7 @@
 
 ### [Amplitude Blur](https://a3r0id.github.io/AudioVisual/example_amplitudeBlur.html)
 
-### [Hue-Frequency Rotation](https://a3r0id.github.io/AudioVisual/example_frequencyHueRotation.html)
+### [Hue-Frequency Rotation](https://a3r0id.github.io/AudioVisual/example_hueFrequencyRotation.html)
 
 -----
 
